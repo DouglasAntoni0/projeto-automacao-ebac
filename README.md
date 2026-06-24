@@ -83,6 +83,12 @@ Este projeto pode ser usado como base para:
 
 A estratégia ideal é manter cenários pequenos, independentes e orientados a comportamento.
 
+## Maturidade técnica esperada
+
+Uma suíte E2E ganha valor quando deixa de ser apenas uma coleção de scripts e passa a funcionar como mecanismo de confiança. Para isso, cada cenário precisa ter intenção clara: qual risco protege, qual fluxo representa e que tipo de falha ajuda a diagnosticar.
+
+Neste projeto, a presença de `baseUrl` e `projectId` indica uma base preparada para crescer. O próximo nível natural seria combinar execução local, dashboard, relatório e pipeline, criando um ciclo em que falhas ficam rastreáveis e decisões de qualidade deixam de depender de validação manual dispersa.
+
 ## Boas práticas recomendadas
 
 - Evitar dependência de ordem entre testes.
@@ -92,12 +98,18 @@ A estratégia ideal é manter cenários pequenos, independentes e orientados a c
 - Registrar evidências em relatórios.
 - Separar testes críticos de testes exploratórios.
 
+## Leitura de portfólio
+
+Este repositório mostra organização e direção. Mesmo sendo uma base de automação, ele comunica elementos que recrutadores técnicos e lideranças costumam procurar: domínio de setup, clareza de execução, preocupação com rastreabilidade e entendimento de como uma suíte pode evoluir para regressão contínua.
+
+O valor está na fundação: um projeto simples, bem documentado e preparado para crescer é melhor do que uma automação extensa sem comandos claros, evidência ou estratégia de manutenção.
+
 ## Troubleshooting
 
 | Situação | Possível causa | Ação |
 | --- | --- | --- |
 | Cypress Cloud não registra execução | Chave/record não configurado | Configurar token apropriado antes de usar dashboard |
-| Aplicação alvo não responde | Ambiente externo indisponível | Validar acesso manual à EBAC Shop |
+| Aplicação alvo não responde | Ambiente externo fora do ar | Validar acesso manual à EBAC Shop |
 | Testes quebram por seletor | DOM alterado | Revisar estratégia de localização |
 | Dependências falham | Node/npm incompatível | Atualizar ambiente local |
 
