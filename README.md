@@ -1,51 +1,41 @@
-# Testes End to End - Ebac Shop
-### Exercício para os alunos de Qualidade de software da EBAC 
+# Projeto de Automação EBAC - Cypress E2E
 
-Ebac shop: http://lojaebac.ebaconline.art.br/
+![Cypress](https://img.shields.io/badge/Cypress-E2E-17202C?style=for-the-badge&logo=cypress&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-automacao-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Cypress Cloud](https://img.shields.io/badge/Cypress%20Cloud-projectId-17202C?style=for-the-badge&logo=cypress&logoColor=white)
 
-## Clonando e executando em sua máquina
+Projeto de automação end-to-end com Cypress para a EBAC Shop, estruturado para validar fluxos web e registrar uma base de execução que pode evoluir para regressão contínua.
 
-### Pré-requisito:
+## O que este projeto demonstra
 
--Node.js - Você encontra em: https://nodejs.org/en/
+| Competência | Evidência |
+| --- | --- |
+| Automação E2E | Cypress aplicado a uma aplicação web de e-commerce |
+| Configuração de projeto | `cypress.config.js` com `baseUrl` e `projectId` |
+| Execução local | Comandos para rodar headless ou pelo runner |
+| Base para CI/CD | Projeto preparado para ser conectado a pipelines e dashboard |
+| Qualidade prática | Exercício tratado como entrega técnica documentada |
 
--Visual Studio Code ou qualquer editor de texto - você encontra em: https://code.visualstudio.com/download
+## Como executar
 
--Git: você encontra em: https://git-scm.com/downloads
-
-
-Via terminal, rode os seguintes comandos:
-```  
-git clone https://github.com/EBAC-QE/teste-e2e-ebac.git
-```
-```
-cd teste-e2e-ebac
-```
-
-#### Para instalar as dependencias:
-```
-npm install 
+```bash
+git clone https://github.com/DouglasAntoni0/projeto-automacao-ebac.git
+cd projeto-automacao-ebac
+npm install
 ```
 
-#### Para executar em moodo Headlesss via console:
-```
+Rodar no terminal:
+
+```bash
 npx cypress run
 ```
 
-#### Para executar via Dashboard:
+Abrir o Cypress Runner:
+
+```bash
+npx cypress open
 ```
-npx cypress open 
-```
-Após abrir o dashboard, selecione um dos navegadores (De preferencia Electron) e siga com as execuções. 
 
+## Resultado técnico
 
-### Bibliotecas de apoio:
--Cypress: Framework de automação: https://cypress.io/
-
-### Bom exercício ;) 
-Fábio & José Ernesto
-Qualidade de software
-
-
-
-
+Este repositório evidencia uma competência importante para QA Automation: transformar exercício em ativo técnico rastreável. A documentação, a configuração e a execução local facilitam manutenção e evolução para relatórios, pipeline e suítes de regressão mais robustas.
